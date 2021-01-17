@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MiAgenda</string>
+    <string name="area_nombre">Nombre Completo</string>
+    <string name="area_fecha">Fecha de Nacimiento</string>
+    <string name="area_telefono">Telefono</string>
+    <string name="area_email">Email</string>
+    <string name="area_descripcion">Descripción de Contacto</string>
+    <string name="btn_siguiente">Siguiente</string>
+</resources>

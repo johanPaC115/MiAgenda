@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/area_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_nombre"
+            android:layout_width="@dimen/dimen_icon"
+            android:layout_height="@dimen/dimen_icon"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_box"
+            app:tint="@color/accent"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/area_nombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/area_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:layout_below="@id/area_fechaNac"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_telefono"
+            android:layout_width="@dimen/dimen_icon"
+            android:layout_height="@dimen/dimen_icon"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/contact_phone"
+            app:tint="@color/accent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/area_telefono">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/area_fechaNac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/area_nombre"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_fecha"
+            android:layout_width="@dimen/dimen_icon"
+            android:layout_height="@dimen/dimen_icon"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/calendar"
+            app:tint="@color/accent"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/area_fecha"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPickerDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showDatePickerDialog"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/area_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/area_telefono"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_email"
+            android:layout_width="@dimen/dimen_icon"
+            android:layout_height="@dimen/dimen_icon"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/email"
+            app:tint="@color/accent"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/area_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/area_Descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/area_email"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_descripcion"
+            android:layout_width="@dimen/dimen_icon"
+            android:layout_height="@dimen/dimen_icon"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/description"
+            app:tint="@color/accent"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/area_descripcion">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_siguiente"
+        android:theme="@style/MyButtonRaised">
+
+    </Button>
+
+</RelativeLayout>
