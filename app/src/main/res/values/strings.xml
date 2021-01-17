@@ -1,4 +1,5 @@
 <resources>
+    <!--Strings Activity_main -->
     <string name="app_name">MiAgenda</string>
     <string name="area_nombre">Nombre Completo</string>
     <string name="area_fecha">Fecha de Nacimiento</string>
@@ -6,4 +7,13 @@
     <string name="area_email">Email</string>
     <string name="area_descripcion">Descripción de Contacto</string>
     <string name="btn_siguiente">Siguiente</string>
+
+    <!--Strings activity_confirmar_datos -->
+    <string name="titulo_activity2">Confirmar Datos</string>
+    <string name="lbl_nombre">Nombre: </string>
+    <string name="lbl_fechaNac">Fecha Nacimiento: </string>
+    <string name="lbl_telefono">Tel: </string>
+    <string name="lbl_email">Email:</string>
+    <string name="lbl_descripcion">Descripcion:</string>
+    <string name="btn_editarDatos">Editar Datos</string>
 </resources>
