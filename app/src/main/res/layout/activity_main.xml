@@ -13,9 +13,11 @@
         android:id="@+id/area_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_left"
+        android:paddingEnd="@dimen/padding_right"
+        android:orientation="horizontal"
         android:paddingLeft="@dimen/padding_left"
-        android:paddingRight="@dimen/padding_right"
-        android:orientation="horizontal">
+        android:paddingRight="@dimen/padding_right">
 
         <ImageView
             android:id="@+id/img_nombre"
@@ -46,7 +48,9 @@
         android:paddingLeft="@dimen/padding_left"
         android:paddingRight="@dimen/padding_right"
         android:layout_below="@id/area_fechaNac"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_left"
+        android:paddingEnd="@dimen/padding_right">
 
         <ImageView
             android:id="@+id/img_telefono"
@@ -76,7 +80,9 @@
         android:layout_below="@id/area_nombre"
         android:paddingLeft="@dimen/padding_left"
         android:paddingRight="@dimen/padding_right"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_left"
+        android:paddingEnd="@dimen/padding_right">
 
         <ImageView
             android:id="@+id/img_fecha"
@@ -111,7 +117,9 @@
         android:layout_below="@id/area_telefono"
         android:paddingLeft="@dimen/padding_left"
         android:paddingRight="@dimen/padding_right"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_left"
+        android:paddingEnd="@dimen/padding_right">
 
         <ImageView
             android:id="@+id/img_email"
@@ -142,7 +150,9 @@
         android:layout_below="@id/area_email"
         android:paddingLeft="@dimen/padding_left"
         android:paddingRight="@dimen/padding_right"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_left"
+        android:paddingEnd="@dimen/padding_right">
 
         <ImageView
             android:id="@+id/img_descripcion"
