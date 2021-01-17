@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="dimen_icon">32dp</dimen>
+    <dimen name="padding">20dp</dimen>
     <dimen name="padding_left">16dp</dimen>
     <dimen name="padding_right">16dp</dimen>
+    <dimen name="titulo_activity">33sp</dimen>
+    <dimen name="texto">20sp</dimen>
+    <dimen name="marginLeft">5dp</dimen>
 </resources>
