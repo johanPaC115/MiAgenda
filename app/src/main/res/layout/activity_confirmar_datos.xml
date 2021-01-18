@@ -32,12 +32,23 @@
             app:tint="@color/accent"
             tools:ignore="ContentDescription" />
         <TextView
-            android:id="@+id/txtNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lbl_nombre"
             android:layout_gravity="center"
+            android:textStyle="bold"
             android:textSize="@dimen/texto"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:layout_marginStart="@dimen/marginLeft">
+        </TextView>
+        <TextView
+            android:id="@+id/txvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/texto"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/marginLeft"
             android:layout_marginLeft="@dimen/marginLeft">
         </TextView>
     </LinearLayout>
@@ -56,12 +67,23 @@
             app:tint="@color/accent"
             tools:ignore="ContentDescription" />
         <TextView
-            android:id="@+id/txtFecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lbl_fechaNac"
             android:layout_gravity="center"
+            android:textStyle="bold"
             android:textSize="@dimen/texto"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:layout_marginStart="@dimen/marginLeft">
+        </TextView>
+        <TextView
+            android:id="@+id/txvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/texto"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/marginLeft"
             android:layout_marginLeft="@dimen/marginLeft">
         </TextView>
     </LinearLayout>
@@ -79,12 +101,23 @@
             app:tint="@color/accent"
             tools:ignore="ContentDescription" />
         <TextView
-            android:id="@+id/txtTelefono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lbl_telefono"
+            android:textStyle="bold"
             android:layout_gravity="center"
             android:textSize="@dimen/texto"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:layout_marginStart="@dimen/marginLeft">
+        </TextView>
+        <TextView
+            android:id="@+id/txvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/texto"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/marginLeft"
             android:layout_marginLeft="@dimen/marginLeft">
         </TextView>
     </LinearLayout>
@@ -103,12 +136,23 @@
            app:tint="@color/accent"
            tools:ignore="ContentDescription" />
        <TextView
-           android:id="@+id/txtEmail"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="@string/lbl_email"
+           android:textStyle="bold"
            android:layout_gravity="center"
            android:textSize="@dimen/texto"
+           android:layout_marginLeft="@dimen/marginLeft"
+           android:layout_marginStart="@dimen/marginLeft">
+       </TextView>
+       <TextView
+           android:id="@+id/txvEmail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textSize="@dimen/texto"
+           android:layout_gravity="center_vertical"
+           android:layout_marginStart="@dimen/marginLeft"
            android:layout_marginLeft="@dimen/marginLeft">
        </TextView>
    </LinearLayout>
@@ -125,13 +169,25 @@
             android:src="@drawable/description"
             app:tint="@color/accent"
             tools:ignore="ContentDescription" />
+
         <TextView
-            android:id="@+id/txtDescripcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lbl_descripcion"
+            android:textStyle="bold"
             android:layout_gravity="center"
             android:textSize="@dimen/texto"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:layout_marginStart="@dimen/marginLeft" />
+        <TextView
+            android:id="@+id/txvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:textSize="@dimen/texto"
+            android:gravity="bottom"
+            android:layout_marginStart="@dimen/marginLeft"
             android:layout_marginLeft="@dimen/marginLeft">
         </TextView>
     </LinearLayout>
@@ -142,8 +198,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/btn_editarDatos"
-        android:theme="@style/MyButtonRaised">
-
+        android:layout_marginTop="@dimen/marginButtonTop"
+        android:theme="@style/MyButtonRaised"
+        android:onClick="confirmarContacto">
     </Button>
 
 </LinearLayout>
