@@ -16,4 +16,22 @@
     <string name="lbl_email">Email:</string>
     <string name="lbl_descripcion">Descripcion:</string>
     <string name="btn_editarDatos">Editar Datos</string>
+
+    <!--Strings Meses -->
+    <string name="enero">ENE</string>
+    <string name="febrero">FEB</string>
+    <string name="marzo">MAR</string>
+    <string name="abril">ABR</string>
+    <string name="mayo">MAY</string>
+    <string name="junio">JUN</string>
+    <string name="julio">JUL</string>
+    <string name="agosto">AGO</string>
+    <string name="septiembre">SEP</string>
+    <string name="octubre">OCT</string>
+    <string name="noviembre">NOV</string>
+    <string name="diciembre">DIC</string>
+
+    <!--Strings Parametros -->
+    <string name="pContacto">contacto</string>
+
 </resources>
