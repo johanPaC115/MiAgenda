@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.media.audiofx.AudioEffect;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
@@ -14,8 +16,9 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
     private DatePickerDialog datePickerDialog;
-    private TextInputEditText dateText;
+    private TextInputEditText dateText, nombreText, telText, emailText, descripText;
 
+    private  Contacto myContacto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,20 @@ public class MainActivity extends AppCompatActivity {
         initDatePicker();
 
         dateText = findViewById(R.id.txtPickerDate);
+        nombreText = (TextInputEditText) findViewById(R.id.txtInputNombre);
+        telText = (TextInputEditText) findViewById(R.id.txtInputTelefono);
+        emailText = (TextInputEditText) findViewById(R.id.txtInputEmail);
+        descripText = (TextInputEditText) findViewById(R.id.txtInputDescripcion);
+
+       Bundle objetoCreado= getIntent().getExtras();
+       if(objetoCreado!=null){
+           myContacto =(Contacto) objetoCreado.getSerializable("contacto");
+           nombreText.setText(myContacto.getNombre());
+           dateText.setText(myContacto.getFecha_nac());
+           telText.setText(myContacto.getTelefono());
+           emailText.setText(myContacto.getEmail());
+           descripText.setText(myContacto.getDescripcion());
+       }
     }
 
     private void initDatePicker() {
@@ -71,5 +88,29 @@ public class MainActivity extends AppCompatActivity {
     public void showDatePickerDialog(View view) {
         datePickerDialog.show();
 
+    }
+
+    public void crearContacto(View view) {
+        agregarContacto();
+    }
+
+    private void agregarContacto() {
+        //Creo el objeto Contacto
+        String nom, fecha, tel, email, desc;
+        nom = nombreText.getText().toString();
+        fecha = dateText.getText().toString();
+        tel = telText.getText().toString();
+        email = emailText.getText().toString();
+        desc = descripText.getText().toString();
+
+        myContacto = new Contacto(nom, fecha, tel, email,desc);
+
+        //Envio el objeto contacto a la siguiente Activity (ConfirmarDatos)
+        Intent intent = new Intent(MainActivity.this, ConfirmarDatos.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("contacto", myContacto);
+        intent.putExtras(bundle);
+        startActivity(intent);
+        finish();
     }
 }
