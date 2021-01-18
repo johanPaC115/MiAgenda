@@ -7,4 +7,5 @@
     <dimen name="titulo_activity">33sp</dimen>
     <dimen name="texto">20sp</dimen>
     <dimen name="marginLeft">5dp</dimen>
+    <dimen name="marginButtonTop">30dp</dimen>
 </resources>
