@@ -27,7 +27,7 @@ public class ConfirmarDatos extends AppCompatActivity {
         Bundle objtetoEnviado= getIntent().getExtras();
 
         if (objtetoEnviado!=null){
-            contact=(Contacto) objtetoEnviado.getSerializable("contacto");
+            contact=(Contacto) objtetoEnviado.getSerializable(getResources().getString(R.string.pContacto));
             txvNombre.setText(contact.getNombre());
             txvFecha.setText(contact.getFecha_nac());
             txvTel.setText(contact.getTelefono());
@@ -44,7 +44,7 @@ public class ConfirmarDatos extends AppCompatActivity {
     private void editarcontacto() {
         Intent editIntent = new Intent(ConfirmarDatos.this, MainActivity.class);
         Bundle bundleContac = new Bundle();
-        bundleContac.putSerializable("contacto", contact);
+        bundleContac.putSerializable(getResources().getString(R.string.pContacto), contact);
         editIntent.putExtras(bundleContac);
         startActivity(editIntent);
         finish();
