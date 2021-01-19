@@ -1,6 +1,7 @@
 # MiAgenda
 Aplicacion Android para Actividad Semana 2 del Curso "Desarrollo de Aplicaciones con Android de Coursera"
 soporta versiones anteriores con AndroidX.
+
 Descripcion de Actividad:
 Haz una aplicación móvil que se compondrá de dos activities: 
 
